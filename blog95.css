@@ -1,0 +1,14 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.top img {
+	max-width: 100%;
+	filter: blur(1.7px);
+	webkit-filter: blur(1.7px);
+	moz-filter: blur(1.7px);
+	o-filter: blur(1.7px);
+	ms-filter: blur(1.7px);
+}
