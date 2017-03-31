@@ -4,11 +4,168 @@ body {
 	width: 100%;
 }
 
-.top img {
-	max-width: 100%;
-	filter: blur(1.7px);
-	webkit-filter: blur(1.7px);
-	moz-filter: blur(1.7px);
-	o-filter: blur(1.7px);
-	ms-filter: blur(1.7px);
+h1 {
+	font-family: 'Nunito', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	margin-top: -3px;
+	margin-bottom: 0px;
+
 }
+
+
+.nav-bar ul {
+	list-style-type: none;
+	margin: 0 auto;
+	overflow: hidden;
+	background: #404040;
+	font-family: 'Nunito', sans-serif;
+}
+
+li {
+	float: left;
+
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 13px 20px;
+	width: 200px;
+	text-decoration: none;
+
+}
+
+li a:hover {
+	background: black;
+}
+
+
+#profile {
+	width: 300px;
+	height: 480px;
+	margin: 60px 20px 20px 20px;
+	padding: 10px;
+	border: 1px solid grey;
+	display: inline-block;
+	position: absolute;
+
+}
+
+#profile img {
+	width: 100%;
+	border-radius: 192px;
+}
+
+
+.personaldescription {
+	
+	color: grey;
+	font-family: 'Nunito', sans-serif;
+	text-align: left;
+	margin-left: -20px;
+	padding-top: 15px;
+}
+
+.personaldescription li {
+	padding: 5px;
+}
+
+span {
+	font-weight: 900;
+	font-size: 17px;
+}
+
+#wrapper {
+	display: inline-block;
+	width: 100%;
+	overflow: hidden;
+}
+
+.card-container {
+	display: inline-block;
+	perspective: 1000px;
+	z-index: 1;
+	width: 250px;
+	height: 400px;
+	margin-top: 100px;
+	float: right;
+	padding-right: 40px;
+}
+
+/* flip the pane when hovered */
+.card-container:hover .card-flip, .card-container.hover .card-flip {
+	transform: rotateY(180deg);
+}
+
+/* speed */
+.card-flip {
+	height: 374px;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	/* transform-origin: 67% 0; */
+	position: relative;
+}
+
+.card-flip .flipped {
+	transform: translateX(-100%) rotateY(-180deg);
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	width: 250px;
+	height: 100%;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	transform: rotateY(0deg);
+}
+
+.front img {
+	width: 100%;
+	height: 374px;
+	opacity: 0.9;
+	border-radius: 5px 5px 5px 5px;
+}
+
+/*back, initially hidden */
+.back {
+	transform: rotateY(180deg);
+    background-color: #e0e0eb;
+    overflow: auto;
+    position: relative;
+}
+
+.back p {
+	font-size: 18px;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	color: grey;
+	font-weight: lighter;
+	width: 100%;
+	padding-top: 50%;
+}
+
+.back p#important {
+	padding-top: 80px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	#wrapper {
+		position: absolute;
+		z-index: 20;
+		overflow: hidden;
+	}
+	.card-container {
+		margin-top: 600px;
+		margin-right: 40px;
+
+	}
+}
+

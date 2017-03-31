@@ -1,13 +1,91 @@
 <!DOCTYPe html>
 <html>
-	<head>
-		<link href="blog95.css" rel="stylesheet">
-		<title>Blog95</title>
-	</head>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Vesper+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="blog95.css" rel="stylesheet">
+	<title>Blog95</title>
+</head>
 
-	<body>
-		<div class="top">
-			<img src="bg.png">
+<body>
+	<div class="top">
+		<h1>SHIRLEY YANG</h1>
+	</div>
+	<div class="nav-bar">
+		<ul>
+			<li><a href="#home">HOME</a></li>
+			<li><a href="#html&css">HTML & CSS</a></li>
+			<li><a href="#javascript">JAVASCRIPT</a></li>
+			<li><a href="#Python">PYTHON</a></li>
+			<li><a href="#contact">CONTACT</a></li>
+		</ul>	
+	</div>
+	<div id="wrapper">
+		<div id="profile">
+			<img class="circle" src="snorlax.png">
+			<ul class="personaldescription">
+				<li><span>NAME:</span> Shirley Yang</li>
+				<li><span>LOCATION</span>: Manchester/London</li>
+				<li><span>EDUCATION</span>: BSc Chemistry @ UCL</li>
+				<li><span>HOBBIES</span>: Eating | Sleeping | Coding!</li>
+			</ul>
 		</div>
-	</body>
+		<div class="card-container" ontouchstart="this.classList.toggle('hover')">
+			<div class="card-flip">
+				<div class="front">
+					<img src="flower3-copy.jpg" />
+				</div>
+
+				<div class="back">
+					<div class="contents">
+						<p>
+							I have just started Python so I'm still exploring!
+						</p>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+		<div class="card-container" ontouchstart="this.classList.toggle('hover')">
+			<div class="card-flip">
+				<div class="front">
+					<img src="flower2-copy.jpg" />
+				</div>
+
+				<div class="back">
+					<div class="contents">
+						<p>
+							My group assignment involved some JQuery!
+						</p>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+		<div class="card-container" ontouchstart="this.classList.toggle('hover')">
+			<div class="card-flip">
+				<div class="front">
+					<img src="flower1-copy.jpg" />
+				</div>
+
+				<div class="back">
+					<div class="contents">
+						<p id="important">
+					
+							I have attended a free community course provided by Code First Girls where they teach HTML, CSS, JQuery and Github. My final (group) assignment was to create a website.
+							<br>
+							<a href="https://weloveanime.github.io/">Weloveanime</a>
+
+						</p>						
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</body>
 </html>
